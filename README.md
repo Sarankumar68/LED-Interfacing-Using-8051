@@ -1,4 +1,4 @@
-# LED-Interfacing-Using-8051
+[[[# LED-Interfacing-Using-8051
 
 ## Aim:
 To interface an LED with the 8051 microcontroller and control its operation.
@@ -30,26 +30,30 @@ o	Ground (GND) connection
 ## Program:
 ```
 #include<reg51.h>
-void main(){
-	unsigned char x,y;
-	unsigned int i;
-	P1=0x00;
-	while(1){
-		x=0x01;
-		for(y=0;y<8;y++){
-			P1=x;
-			for(i=0;i<60000;i++);
-			x=x<<1;
+void main()
+{
+unsigned char x,y;
+unsigned int i;
+P1=0x00;//output configuration 
+while(1)
+	{
+	x=0x01; 
+	for(y=0;y<8;y++)	
+			{
+				P1=x;
+				for(i=0;i<60000;i++);
+				x=x<<1;
+			}
 		}
 	}
-}
 ```
 
-
 ## Output:
-<img width="1034" height="595" alt="image" src="https://github.com/user-attachments/assets/1ed3b7db-2015-4c38-a9a4-d5c3adf27526" />
+<img width="1744" height="1140" alt="image" src="https://github.com/user-attachments/assets/40f6d02f-7e72-4336-b54b-bb28bc63eb97" />
+
 
 
 ## Result:
 The LED interfacing with the 8051 microcontroller has been successfully implemented and simulated using Keil and Proteus.
 
+](https://github.com/Sarankumar68/LED-Interfacing-Using-8051/edit/main/README.md)](https://github.com/Sarankumar68/LED-Interfacing-Using-8051/edit/main/README.md)](https://github.com/Sarankumar68/LED-Interfacing-Using-8051/edit/main/README.md)
